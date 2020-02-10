@@ -17,7 +17,7 @@ public class Console {
 
     public static String getStringInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
-        println(prompt);
+        print(prompt);
         String userInput = scanner.nextLine();
         return userInput;
     }
@@ -27,6 +27,14 @@ public class Console {
     }
 
     public static Double getDoubleInput(String prompt) {
-        return null;
+        Scanner scanner = new Scanner(System.in);
+        print(prompt);
+        while(true){
+            try {
+                return Double.valueOf(scanner.nextLine());
+            } catch (Exception e) {
+                print("Input invalid, please enter again: ");
+            }
+        }
     }
 }
