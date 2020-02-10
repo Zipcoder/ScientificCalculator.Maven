@@ -16,17 +16,33 @@ public class Console {
     }
 
     public static String getStringInput(String prompt) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner strScanner = new Scanner(System.in);
         println(prompt);
-        String userInput = scanner.nextLine();
-        return userInput;
+        String strInput = strScanner.nextLine();
+        return strInput;
     }
 
-    public static Integer getIntegerInput(String prompt) {
-        return null;
+    public static String evalMenuOption(String m){
+            if (m.equals("A")) {
+                println("your string is " + m);
+            } else if (m.equals("B")) {
+                println("your string is " + m);
+            } else {
+                println("Invalid Input! Please type A for Integer or B for Double");
+                println("your string is " + m);
+            }
+            return m;
     }
 
-    public static Double getDoubleInput(String prompt) {
-        return null;
+    public static double getDoubleInput(String prompt) {
+        Scanner doubleScanner = new Scanner(System.in);
+        println(prompt);
+        while (!doubleScanner.hasNextDouble()) {
+            doubleScanner.next();
+            println("Invalid Input! Please enter a Double.");
+        }
+        double doubleInput = doubleScanner.nextDouble();
+
+        return doubleInput;
     }
 }
