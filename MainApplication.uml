@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.zipcodewilmington.scientificcalculator.MainApplication</OriginalElement>
+  <nodes>
+    <node x="-59.0" y="-267.0">com.zipcodewilmington.scientificcalculator.MainApplication</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.5013009540329575" x="99.0" y="299.5" />
+  <SelectedNodes>
+    <node>com.zipcodewilmington.scientificcalculator.MainApplication</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
