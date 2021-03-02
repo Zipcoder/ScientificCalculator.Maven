@@ -1,0 +1,91 @@
+@startuml
+<<<<<<< HEAD
+
+class MainApplication{
+    double currentlyDisplayed
+    double memory
+    boolean isRunning
+}
+
+class Console{
+    getStringInput()
+    getDoubleInput()
+}
+
+class Calculator{
+    drawScreen()
+    performOperation(String, double, double)
+    performOperation(String, double)
+    addition()
+    subtraction()
+    multiply()
+    divide()
+    exponential()
+    square()
+    squareRoot()
+    inverse()
+    invert()
+    sine()
+    cosine()
+    tangent()
+    inverseSine()
+    inverseCosine()
+    inverseTangent()
+    factorial()
+    log()
+    inverseLog()
+    naturalLog()
+    inverseNaturalLog()
+    convertFtoC()
+    convertCtoF()
+    convertLBtoKG()
+    convertKGtoLB()
+    toRadians()
+    toDegrees()
+    decToBinary()
+    decToOct()
+    decToHex()
+    binaryToDec()
+    binaryToOct()
+    binaryToHex()
+    octToBinary()
+    octToDec()
+    octToHex()
+    hexToBinary()
+    hexToOct()
+    hexToDec()
+}
+
+MainApplication <|-- Console
+MainApplication <|-- Calculator
+
+
+
+=======
+'https://plantuml.com/class-diagram
+
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+Object[] elementData
+size()
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+>>>>>>> 2269485a535b70f06303894d97a1ad9bd96fbc89
+
+@enduml
