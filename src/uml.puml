@@ -1,0 +1,64 @@
+@startuml
+
+class MainApplication{
+    double currentlyDisplayed
+    double memory
+    boolean isRunning
+}
+
+class Console{
+    getStringInput()
+    getDoubleInput()
+}
+
+class Calculator{
+    drawScreen()
+    performOperation(String, double, double)
+    performOperation(String, double)
+    addition()
+    subtraction()
+    multiply()
+    divide()
+    exponential()
+    square()
+    squareRoot()
+    inverse()
+    invert()
+    sine()
+    cosine()
+    tangent()
+    inverseSine()
+    inverseCosine()
+    inverseTangent()
+    factorial()
+    log()
+    inverseLog()
+    naturalLog()
+    inverseNaturalLog()
+    convertFtoC()
+    convertCtoF()
+    convertLBtoKG()
+    convertKGtoLB()
+    toRadians()
+    toDegrees()
+    decToBinary()
+    decToOct()
+    decToHex()
+    binaryToDec()
+    binaryToOct()
+    binaryToHex()
+    octToBinary()
+    octToDec()
+    octToHex()
+    hexToBinary()
+    hexToOct()
+    hexToDec()
+}
+
+MainApplication <|-- Console
+MainApplication <|-- Calculator
+
+
+
+
+@enduml
