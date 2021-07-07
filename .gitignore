@@ -149,6 +149,7 @@ fabric.properties
 .project
 .classpath
 .settings
+.DS_Store
 
 
 #maven build target
