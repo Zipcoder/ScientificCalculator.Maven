@@ -15,18 +15,42 @@ public class Console {
         print(output + "\n", args);
     }
 
-    public static String getStringInput(String prompt) {
-        Scanner scanner = new Scanner(System.in);
-        println(prompt);
-        String userInput = scanner.nextLine();
-        return userInput;
+    public static  String getStringInput(String prompt)
+    {
+        Scanner username = new Scanner(System.in);
+        println (prompt);
+        String user = username.nextLine();
+        System.out.println("Hello " + user + "!");
+        return user;
     }
 
-    public static Integer getIntegerInput(String prompt) {
-        return null;
+    public static  Double getDoubleInput(String prompt)
+    {
+        Scanner number = new Scanner(System.in);
+        println (prompt);
+        Double num = number.nextDouble();
+        return num;
     }
 
-    public static Double getDoubleInput(String prompt) {
-        return null;
+    public static  String getOperationInput(String prompt)
+    {
+        Scanner operation = new Scanner(System.in);
+        println (prompt);
+        String ops = operation.nextLine();
+        return ops;
     }
+
+
+
+
+
+
+
+    //public static Integer getIntegerInput(String prompt) {
+    //return null;
 }
+
+//public static Double getDoubleInput(String prompt) {
+//return null;
+//}
+//}
